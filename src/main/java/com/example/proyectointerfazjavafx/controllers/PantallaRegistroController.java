@@ -44,10 +44,10 @@ public class PantallaRegistroController {
     public void ejecutarRegistro(ActionEvent actionEvent) throws IOException {
         if (textUsuario.getText().isEmpty() || textMail.getText().isEmpty() || textTelefono.getText().isEmpty() || textPass.getText().isEmpty() || textPass2.getText().isEmpty()) {
             mostrarAlerta("Error", "Debe completar todos los campos");
+        }  else if (textPass.getText().length() < 8) {
+            mostrarAlerta("Error", "La contraseña debe tener al menos 8 caracteres");
         } else if (!textPass.getText().equals(textPass2.getText())) {
             mostrarAlerta("Error", "Las contraseñas no coinciden");
-        } else if (textPass.getText().length() < 8) {
-            mostrarAlerta("Error", "La contraseña debe tener al menos 8 caracteres");
         } else if (textUsuario.getText().length() < 4) {
             mostrarAlerta("Error", "El nombre de usuario debe tener al menos 4 caracteres");
         } else if (textTelefono.getText().length() != 9) {
@@ -56,8 +56,6 @@ public class PantallaRegistroController {
             mostrarAlerta("Error", "El mail ingresado no es valido");
         } else if (textUsuario.getText().length() > 20) {
             mostrarAlerta("Error", "El nombre de usuario no puede tener mas de 20 caracteres");
-        } else if (textTelefono.getText().length() > 20) {
-            mostrarAlerta("Error", "El telefono no puede tener mas de 20 caracteres");
         } else if (textMail.getText().length() > 20) {
             mostrarAlerta("Error", "El mail no puede tener mas de 20 caracteres");
         } else if (textPass.getText().length() > 20) {

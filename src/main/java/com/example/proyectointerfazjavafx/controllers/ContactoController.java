@@ -21,20 +21,24 @@ public class ContactoController {
 
     @FXML
     public TextArea texto;
-    public void botonMail(ActionEvent actionEvent) {
+    public void botonMail(ActionEvent actionEvent) throws IOException {
         if (texto.getText().isEmpty()) {
             mostrarAlerta("Error", "Debe completar todos los campos");
         } else {
             mostrarAlerta("Informacion", "El mail ha sido enviado correctamente, en breve recibirá una respuesta.");
+            ((Button) actionEvent.getSource()).getScene().getWindow().hide();
+            MenuAbiertoView.show();
         }
     }
 
     @FXML
-    public void botonTelefono(ActionEvent actionEvent) {
+    public void botonTelefono(ActionEvent actionEvent) throws IOException {
         if (texto.getText().isEmpty()) {
             mostrarAlerta("Error", "Debe completar todos los campos");
         } else {
             mostrarAlerta("Informacion", "El mensaje telefónico ha sido enviado correctamente, en breve recibirá una respuesta.");
+            ((Button) actionEvent.getSource()).getScene().getWindow().hide();
+            MenuAbiertoView.show();
         }
     }
 
