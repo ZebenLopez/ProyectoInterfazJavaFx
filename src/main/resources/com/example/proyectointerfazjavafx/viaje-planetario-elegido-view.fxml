@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" stylesheets="@../../../style/login-css.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectointerfazjavafx.controllers.ViajePlanetarioElegidoController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="300.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/viaLactea.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="50.0" layoutY="95.0" prefHeight="438.0" prefWidth="200.0" styleClass="panelBlanco" stylesheets="@../../../style/login-css.css">
+            <children>
+                <ImageView fitHeight="175.0" fitWidth="284.0" layoutX="14.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true" styleClass="nave">
+                    <image>
+                        <Image url="@../../../images/TITAN-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="29.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A TITÁN">
+                    <font>
+                        <Font name="Georgia Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="19.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titán, luna de Saturno, es única con su densa atmósfera y lagos de metano y etano. La sonda Huygens exploró su superficie en 2005, proporcionando valiosa información sobre este intrigante mundo." wrappingWidth="162.0" />
+                <Text layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACIÓN" wrappingWidth="101.00000762939453">
+                    <font>
+                        <Font name="Georgia Bold" size="10.0" />
+                    </font>
+                </Text>
+                <Text layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DURACION" wrappingWidth="101.00000762939453">
+                    <font>
+                        <Font name="Georgia Bold" size="10.0" />
+                    </font>
+                </Text>
+                <Text layoutX="19.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aproximadamente 16 horas" wrappingWidth="162.0" />
+                <Text layoutX="-1.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRECIO" wrappingWidth="101.00000762939453">
+                    <font>
+                        <Font name="Georgia Bold" size="10.0" />
+                    </font>
+                </Text>
+                <Text layoutX="19.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="853.258 $ Ud" wrappingWidth="162.0" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="230.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logoEmpresa.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="75.0" layoutY="549.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#botonAtras" prefHeight="26.0" prefWidth="43.0" text="Atrás">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonAmarillo" />
+                <String fx:value="botonSalir" />
+            </styleClass>
+        </Button>
+        <ImageView fitHeight="49.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-menú-64.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="3.0" layoutY="7.0" mnemonicParsing="false" onAction="#botonMenuInvisible" prefHeight="36.0" prefWidth="43.0" styleClass="botonInvisible" />
+        <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="49.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-izquierda-en-círculo-2-64.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="158.0" layoutY="549.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#botonComprar" prefHeight="26.0" prefWidth="58.0" styleClass="botonAmarillo" text="Reservar">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="217.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-comprar-50.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

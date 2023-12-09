@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="300.0" stylesheets="@../../../style/login-css.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.proyectointerfazjavafx.controllers.MainController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="300.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/viaLactea.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="160.0" fitWidth="162.0" layoutX="69.0" layoutY="38.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logoEmpresa.png"/>
+            </image>
+        </ImageView>
+        <Pane layoutX="50.0" layoutY="194.0" prefHeight="362.0" prefWidth="200.0" styleClass="panel"
+              stylesheets="@../../../style/login-css.css">
+            <children>
+                <Button layoutX="50.0" layoutY="305.0" mnemonicParsing="false" onAction="#botonrRegistro"
+                        prefHeight="30.0" prefWidth="101.0" styleClass="botonAmarillo" text="REGISTRO"/>
+                <Button layoutX="50.0" layoutY="251.0" mnemonicParsing="false" onAction="#botonLogin" prefHeight="30.0"
+                        prefWidth="101.0" styleClass="botonNegro" text="LOGIN" textFill="#d5a021"/>
+                <TextField fx:id="texto1" alignment="CENTER" layoutX="19.0" layoutY="50.0" prefHeight="25.0"
+                           prefWidth="162.0" promptText="USUARIO" styleClass="textField">
+                    <font>
+                        <Font name="Georgia Bold" size="12.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="texto12" alignment="CENTER" layoutX="19.0" layoutY="104.0" prefHeight="25.0"
+                           prefWidth="162.0" promptText="CONTRASEÑA" styleClass="textField">
+                    <font>
+                        <Font name="Georgia Bold" size="12.0"/>
+                    </font>
+                </TextField>
+                <CheckBox layoutX="38.0" layoutY="164.0" mnemonicParsing="false" text="Recordar Cuenta"
+                          textFill="#d5a021" textOverrun="CLIP"/>
+                <Label layoutX="29.0" layoutY="203.0" text="¿Recuperar contraseña?" textFill="#d5a021"/>
+                <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="17.0" layoutY="50.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../icons/icons8-user-48.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="25.0" fitWidth="19.0" layoutX="20.0" layoutY="107.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../icons/icons8-contraseña-50.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Button layoutX="123.0" layoutY="565.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false"
+                onAction="#botonSalir" prefHeight="26.0" prefWidth="43.0" text="Salir">
+            <font>
+                <Font size="10.0"/>
+            </font>
+            <styleClass>
+                <String fx:value="botonAmarillo"/>
+                <String fx:value="botonSalir"/>
+            </styleClass>
+        </Button>
+        <ImageView fitHeight="25.0" fitWidth="19.0" layoutX="95.0" layoutY="569.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-salida-de-incendios-50.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

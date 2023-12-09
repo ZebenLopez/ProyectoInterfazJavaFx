@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" stylesheets="@../../../style/login-css.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectointerfazjavafx.controllers.ProyectosFuturosController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="300.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/viaLactea.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="50.0" layoutY="161.0" prefHeight="355.0" prefWidth="200.0" styleClass="panelBlanco" stylesheets="@../../../style/login-css.css">
+            <children>
+                <Text fill="#d5a021" layoutX="59.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXPLOREZ">
+                    <font>
+                        <Font name="Georgia Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="24.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.0" />
+                <TextArea layoutY="49.0" prefHeight="306.0" prefWidth="200.0" text="      ¿Quiénes somos?&#10;&#10;Somos EXPLOREZ, una destacada empresa pionera en la industria de viajes espaciales. Nuestro equipo está compuesto por profesionales apasionados de la aviación, la tecnología y la exploración espacial. Nos dedicamos a ofrecer experiencias extraordinarias más allá de la atmósfera terrestre, brindando a nuestros clientes la oportunidad de alcanzar nuevas alturas y descubrir la belleza del espacio.&#10;&#10;     ¿Qué hacemos?&#10;&#10;En [Nombre de tu Empresa], llevamos la exploración espacial al alcance de todos. Facilitamos el acceso a viajes espaciales emocionantes, permitiendo a nuestros usuarios reservar sus aventuras cósmicas de manera sencilla y segura. Nuestra plataforma ofrece información detallada sobre destinos espaciales, opciones de vuelo, y aspectos técnicos para que nuestros clientes tomen decisiones informadas.&#10;&#10;Nos enorgullece no solo proporcionar viajes, sino también compartir la maravilla del cosmos. Nuestra misión es hacer que la experiencia espacial sea accesible y memorable para todos. Además de ofrecer servicios de reserva, estamos comprometidos con la educación y el entusiasmo por la exploración espacial, proporcionando contenido informativo y apoyo personalizado a nuestros clientes. Contáctanos para embarcarte en una experiencia fuera de este mundo y hacer realidad tus sueños espaciales." wrapText="true" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="210.0" fitWidth="152.0" layoutX="74.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logoEmpresa.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="141.0" layoutY="549.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#botonMenuInvisible" prefHeight="26.0" prefWidth="43.0" text="Atrás">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonAmarillo" />
+                <String fx:value="botonSalir" />
+            </styleClass>
+        </Button>
+        <ImageView fitHeight="49.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-menú-64.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="3.0" layoutY="7.0" mnemonicParsing="false" onAction="#botonMenuInvisible" prefHeight="36.0" prefWidth="43.0" styleClass="botonInvisible" />
+        <ImageView fitHeight="26.0" fitWidth="43.0" layoutX="115.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-izquierda-en-círculo-2-64.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+/* Estilo para el DialogPane del Alert */
+.dialog-pane {
+    -fx-border-color: #D5A021;
+    -fx-border-width: 2.0px;
+    -fx-background-color: #D5A021;
+    -fx-border-color: black;
+}
+
+/* Estilo para el encabezado del Alert */
+.dialog-pane > .header-panel {
+    -fx-background-color: black;
+}
+
+/* Estilo para el contenido del Alert */
+.dialog-pane > .content.label {
+    -fx-background-color: #D5A021;
+    -fx-text-fill: black;
+}
+
+/* Estilo para los botones del Alert */
+.dialog-pane .button {
+    -fx-background-color: black;
+    -fx-text-fill: #D5A021;
+}

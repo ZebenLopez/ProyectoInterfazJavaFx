@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" stylesheets="@../../../style/login-css.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectointerfazjavafx.controllers.PantallaPrincipalController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="300.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/viaLactea.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="46.0" layoutY="94.0" prefHeight="394.0" prefWidth="200.0" styleClass="panelBlanco" stylesheets="@../../../style/login-css.css">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="282.0" layoutX="-21.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" styleClass="nave">
+                    <image>
+                        <Image url="@../../../images/nave.jpg" />
+                    </image>
+                </ImageView>
+                <Text layoutX="13.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A EXPLOREZ">
+                    <font>
+                        <Font name="Georgia Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="19.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esta aplicación está hecha para exploradores, como tú. Navega por ella y encontrarás las mejores opciones para conocer el universo que nos rodea." wrappingWidth="162.0" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="160.0" fitWidth="162.0" layoutX="65.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logoEmpresa.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="123.0" layoutY="565.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#botonSalir" prefHeight="26.0" prefWidth="43.0" text="Salir">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonAmarillo" />
+                <String fx:value="botonSalir" />
+            </styleClass>
+        </Button>
+        <Button layoutX="92.0" layoutY="510.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#botonMenu" prefHeight="36.0" prefWidth="108.0" styleClass="botonAmarillo" text="MENÚ" />
+        <ImageView fitHeight="49.0" fitWidth="53.0" onMouseClicked="#menu" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icons8-menú-64.png" />
+            </image>
+        </ImageView>
+      <Button layoutX="3.0" layoutY="7.0" mnemonicParsing="false" onAction="#botonMenuInvisible" prefHeight="36.0" prefWidth="43.0" styleClass="botonInvisible" />
+      <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="65.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-menú-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="92.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-salida-de-incendios-50.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
