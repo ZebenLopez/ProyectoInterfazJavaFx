@@ -53,10 +53,10 @@
                         <TextArea layoutY="162.0" prefHeight="200.0" prefWidth="280.0" text="Tenemos programada, para 2029 la finalización de la construcción y puesta en marcha de la colonia Lunar MoonColony. En la que nuestros clientes se podrán opedar y pasear por el maravilloso suelo lunar." wrapText="true" />
                         <ImageView fitHeight="171.0" fitWidth="280.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../images/coloniaLunar.jpg" />
+                                <Image url="@../../../images/coloniaMarte.jpg" />
                             </image>
                         </ImageView>
-                        <TextArea layoutY="514.0" prefHeight="200.0" prefWidth="280.0" text="Tenemos programada, para 2029 la finalización de la construcción y puesta en marcha de la colonia Lunar MoonColony. En la que nuestros clientes se podrán opedar y pasear por el maravilloso suelo lunar." wrapText="true" />
+                        <TextArea layoutY="461.0" prefHeight="200.0" prefWidth="280.0" text="Tenemos programada, para 2029 la finalización de la construcción y puesta en marcha de la colonia Lunar MoonColony. En la que nuestros clientes se podrán opedar y pasear por el maravilloso suelo lunar." wrapText="true" />
                     </children>
                 </AnchorPane>
             </content>

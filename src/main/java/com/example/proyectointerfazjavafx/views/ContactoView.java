@@ -13,18 +13,17 @@ public class ContactoView {
     private static Stage contactoStage = new Stage();
 
     public static void show() throws IOException {
-        contactoStage.hide();
+           contactoStage.hide();
 
-        Stage newStage = new Stage();
-        newStage.initStyle(StageStyle.UNDECORATED);
+            Stage newStage = new Stage();
+            newStage.initStyle(StageStyle.UNDECORATED);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("contacto.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        contactoStage.setTitle("Contacto");
-        contactoStage.setScene(scene);
-        contactoStage.setResizable(false);
-        contactoStage.show();
-
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("contacto.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            newStage.setTitle("Panel Contacto!");
+            newStage.setScene(scene);
+            newStage.setResizable(false);
+            newStage.show();
 
     }
 }
